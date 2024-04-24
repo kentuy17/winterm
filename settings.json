@@ -14,21 +14,22 @@
       "keys": "ctrl+v"
     },
     {
-      "command": "find",
-      "keys": "ctrl+shift+f"
-    },
-    {
       "command": {
         "action": "splitPane",
         "split": "auto",
         "splitMode": "duplicate"
       },
       "keys": "alt+shift+d"
+    },
+    {
+      "command": "find",
+      "keys": "ctrl+shift+f"
     }
   ],
+  "alwaysShowNotificationIcon": true,
   "copyFormatting": "none",
   "copyOnSelect": true,
-  "defaultProfile": "{17bf3de4-5353-5709-bcf9-835bd952a95e}",
+  "defaultProfile": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
   "focusFollowMouse": true,
   "newTabMenu": [
     {
@@ -37,7 +38,11 @@
   ],
   "profiles": {
     "defaults": {
-      "elevate": true
+      "bellStyle": "window",
+      "elevate": true,
+      "font": {
+        "face": "Hack Nerd Font"
+      }
     },
     "list": [
       {
@@ -47,7 +52,8 @@
         "name": "Windows PowerShell"
       },
       {
-        "commandline": "%SystemRoot%\\System32\\cmd.exe",
+        "commandline": "C:\\WINDOWS\\system32\\cmd.exe",
+        "elevate": false,
         "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
         "hidden": false,
         "name": "Command Prompt"
@@ -93,14 +99,31 @@
         },
         "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
         "hidden": false,
+        "icon": "C:\\Program Files\\Git\\mingw64\\share\\git\\git-for-windows.ico",
         "name": "Git Bash",
-        "source": "Git"
+        "source": "Git",
+        "startingDirectory": "C:\\Users\\PH0067"
       },
       {
-        "guid": "{d7b20cea-47a9-518c-95a4-c8bd91e2e1c6}",
+        "guid": "{e5a83caa-4c73-52b3-ae6b-bc438d721ef9}",
         "hidden": false,
-        "name": "Ubuntu 22.04.2 LTS",
+        "name": "Ubuntu 22.04.3 LTS",
         "source": "CanonicalGroupLimited.Ubuntu22.04LTS_79rhkp1fndgsc"
+      },
+      {
+        "colorScheme": "One Half Dark",
+        "commandline": "C:\\Program Files\\Git\\git-cmd.exe",
+        "elevate": false,
+        "font": {
+          "face": "Hack Nerd Font",
+          "size": 12.0,
+          "weight": "semi-light"
+        },
+        "guid": "{3a72e032-7aa8-4255-9077-682c8a607a46}",
+        "hidden": false,
+        "icon": "C:\\Program Files\\Git\\mingw64\\share\\git\\git-for-windows.ico",
+        "name": "Git CMD",
+        "startingDirectory": "D:\\WorkDir"
       }
     ]
   },
@@ -359,44 +382,9 @@
       "yellow": "#808000"
     }
   ],
-  "themes": [
-    {
-      "name": "legacyDark",
-      "tab": {
-        "background": null,
-        "showCloseButton": "always",
-        "unfocusedBackground": null
-      },
-      "window": {
-        "applicationTheme": "dark",
-        "useMica": false
-      }
-    },
-    {
-      "name": "legacyLight",
-      "tab": {
-        "background": null,
-        "showCloseButton": "always",
-        "unfocusedBackground": null
-      },
-      "window": {
-        "applicationTheme": "light",
-        "useMica": false
-      }
-    },
-    {
-      "name": "legacySystem",
-      "tab": {
-        "background": null,
-        "showCloseButton": "always",
-        "unfocusedBackground": null
-      },
-      "window": {
-        "applicationTheme": "system",
-        "useMica": false
-      }
-    }
-  ],
+  "showTabsInTitlebar": false,
+  "themes": [],
   "useAcrylicInTabRow": true,
+  "windowingBehavior": "useAnyExisting",
   "wordDelimiters": " \\()\"'-,:;<>~!@#$%^&*|+=[]{}~?\u2502"
 }
